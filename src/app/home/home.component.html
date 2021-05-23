@@ -1,0 +1,13 @@
+<div>
+    <h1>ICTAK</h1>
+    <h2>{{title}}</h2>
+    <h3>Welcome {{name}}</h3>
+    <input type="text"[(ngModel)]="name">
+    <span *ngIf="isavailable">Product is available</span>
+    <select>
+      <option *ngFor="let i of months">{{i}}</option>
+    </select>
+    <button (click)="buttonClicked()">Click Me</button>
+    <input type="text" (keyup)="keyUpDemo($event)">
+    <label>{{value}}</label>
+  </div>
